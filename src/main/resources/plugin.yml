@@ -5,3 +5,8 @@ api-version: '1.21'
 load: STARTUP
 authors: [ Vincent Wackler ]
 website: bcnlab.org
+commands:
+    labssurvival:
+        description: 'Core info command'
+        usage: '/labssurvival'
+        aliases: [ beaconlabssurvival ]
