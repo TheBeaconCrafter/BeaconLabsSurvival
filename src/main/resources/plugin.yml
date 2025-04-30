@@ -1,0 +1,7 @@
+name: BeaconLabsSurvival
+version: '1.0.0'
+main: org.bcnlab.beaconLabsSurvival.BeaconLabsSurvival
+api-version: '1.21'
+load: STARTUP
+authors: [ Vincent Wackler ]
+website: bcnlab.org
