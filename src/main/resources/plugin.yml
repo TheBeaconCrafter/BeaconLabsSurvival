@@ -10,3 +10,36 @@ commands:
         description: 'Core info command'
         usage: '/labssurvival'
         aliases: [ beaconlabssurvival ]
+    chunk:
+        description: Chunk management commands
+        usage: /chunk <subcommand>
+        aliases: [chunks]
+    bypassbuild:
+        description: Toggle build bypass (for admins/OPs)
+        usage: /bypassbuild
+    homes:
+        description: 'List your homes'
+        usage: '/homes'
+    sethome:
+        description: 'Set a home at your current location'
+        usage: '/sethome <name>'
+    home:
+        description: 'Teleport to one of your homes'
+        usage: '/home <name>'
+    delhome:
+        description: 'Delete one of your homes'
+        usage: '/delhome <name>'
+    chunk:
+        description: 'Manage chunk claims: info, claim, unclaim, trust, untrust, notify, deny, allow'
+        usage: '/chunk <info|claim|unclaim|trust|untrust|notify|deny|allow> [player|*]'
+        aliases: [ c ]
+permissions:
+    beaconlabs.chunks.bypass:
+        description: 'Bypass chunk claim limits'
+        default: false
+    beaconlabs.homes.bypass:
+        description: 'Bypass home limits'
+        default: false
+    beaconlabs.chunk.admin:
+        description: 'Admin override for chunk commands and protections'
+        default: op
